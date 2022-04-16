@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Room homepage</title>
+		<link rel="stylesheet" href="/room/styles/main.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+		<script src="/room/app.js" defer></script>
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="top-container">
+				<header>
+					<h1 class="brand"><img src="/room/images/logo.svg" alt="" /></h1>
+					<button type="button" id="hamburger">
+						<img
+							src="/room/images/icon-hamburger.svg"
+							alt="Open the navigation menu"
+						/>
+					</button>
+					<div class="menu">
+						<button type="button" id="close">
+							<img
+								src="/room/images/icon-close.svg"
+								alt="Close the navigation menu"
+							/>
+						</button>
+						<nav class="main-menu">
+							<ul class="main-menu__list">
+								<li><a href="" class="main-menu__item">Home</a></li>
+								<li><a href="" class="main-menu__item">Shop</a></li>
+								<li><a href="" class="main-menu__item">About</a></li>
+								<li><a href="" class="main-menu__item">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+				<section class="hero">
+					<div class="imageSlider">
+						<div class="imageSlider__controls">
+							<div class="left">
+								<img src="/room/images/icon-angle-left.svg" alt="" />
+							</div>
+							<div class="right">
+								<img src="/room/images/icon-angle-right.svg" alt="" />
+							</div>
+						</div>
+					</div>
+					<h2 class="hero__title">Discover innovative ways to decorate</h2>
+					<p class="hero__description">
+						We provide unmatched quality, comfort, and style for property owners
+						across the country. Our experts combine form and function in
+						bringing your vision to life. Create a room in your own style with
+						our collection and make your property a reflection of you and what
+						you love.
+					</p>
+					<a href="#" class="hero__cta" title="Go to the shop"
+						>Shop now
+						<img src="/room/images/icon-arrow.svg" alt="Go to the shop"
+					/></a>
+				</section>
+			</div>
+			<div class="bottom-container">
+				<img src="/room/images/image-about-dark.jpg" alt="" />
+				<section aria-label="furniture" class="furniture">
+					<h2 class="furniture__title">About our furniture</h2>
+					<div class="furniture__description">
+						Our multifunctional collection blends design and function to suit
+						your individual taste. Make each room unique, or pick a cohesive
+						theme that best express your interests and what inspires you. Find
+						the furniture pieces you need, from traditional to contemporary
+						styles or anything in between. Product specialists are available to
+						help you create your dream space.
+					</div>
+				</section>
+				<img src="/room/images/image-about-light.jpg" alt="" />
+			</div>
+		</div>
+		<footer>
+			<p>
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>
+				Coded by
+				<a href="https://www.linkedin.com/in/ainesc/" target="_blank"
+					>Alexandra Cruz</a
+				>
+			</p>
+		</footer>
+	</body>
+</html>

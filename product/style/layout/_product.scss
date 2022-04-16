@@ -1,0 +1,72 @@
+.product {
+	padding: 1rem;
+	display: grid;
+	margin: 0 auto;
+	gap: 1rem;
+
+	&__brand {
+		@include font(0.7rem, 700, 0.8rem);
+		color: $orange;
+		letter-spacing: 0.2rem;
+		text-transform: uppercase;
+	}
+
+	&__title {
+		@include font(2rem, 700, 2.2rem);
+	}
+
+	&__description {
+		@include font($l-height: 1.7rem);
+		color: $darkGreyBlue;
+	}
+
+	&__price {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+
+	&__current {
+		display: flex;
+		align-items: center;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	&__current-price {
+		@include font(1.5rem, 700, 1.7rem);
+	}
+
+	&__discount {
+		@include font($weight: 700);
+		color: $orange;
+		background-color: $softOrange;
+		padding: 0.3rem;
+		border-radius: 5px;
+	}
+
+	&__former-price {
+		@include font($weight: 700);
+		color: $greyBlue;
+		text-decoration: line-through;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.product {
+		gap: 1.5rem;
+
+		&__brand {
+			font-size: 1rem;
+			line-height: 1.2rem;
+			letter-spacing: 0.4rem;
+		}
+
+		&__title {
+			font-size: 2.7rem;
+			letter-spacing: 0.2rem;
+			word-spacing: 0.2rem;
+			line-height: 2.8rem;
+		}
+	}
+}

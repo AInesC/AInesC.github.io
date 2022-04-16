@@ -1,0 +1,249 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body,
+div,
+h1,
+h2,
+p,
+a,
+ul,
+li,
+header,
+nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	font-family: "Fira Sans", sans-serif;
+	background-color: #000;
+	color: #fff;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+button {
+	cursor: pointer;
+	outline: inherit;
+	background-color: transparent;
+	border: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 2rem;
+	grid-area: header;
+	padding: 2rem 4rem;
+	max-width: 1300px;
+	width: 80vw;
+	height: 10vh;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 4vmin;
+	font-weight: 600;
+}
+
+.fa-ellipsis {
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+.fa-x {
+	font-size: 1.5rem;
+	color: #fff;
+	padding: 0.7rem;
+}
+
+.menu {
+	position: absolute;
+	top: 0;
+	right: -100vw;
+	width: 80%;
+	height: 100%;
+	opacity: 0;
+	background-color: rgb(23, 23, 23);
+}
+
+.menu__list {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	padding: 2rem;
+}
+
+.menu__item {
+	color: #fff;
+}
+
+section {
+	max-width: 1300px;
+	width: 80vw;
+	margin: 2.5rem auto;
+	height: auto;
+}
+
+.title {
+	font-size: 5vmin;
+	font-weight: 500;
+	padding-bottom: 1em;
+}
+
+.intro {
+	padding: 2rem 0;
+}
+
+.intro__title {
+	font-size: 10vmin;
+	font-weight: 900;
+}
+
+.intro__subtitle {
+	font-size: 7vmin;
+	font-weight: 300;
+}
+
+.intro__text {
+	font-weight: 400;
+	padding-bottom: 1.5rem;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.gallery > div {
+	background-color: #fff;
+	min-width: 300px;
+	width: 50vmin;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #ccc;
+	border-radius: 1rem;
+}
+
+.gallery a {
+	font-size: 1.5rem;
+	color: transparent;
+}
+
+.gallery a:hover {
+	color: #fff;
+	background-color: rgba(249, 204, 108, 0.6);
+}
+
+.gallery div {
+	justify-self: center;
+}
+
+#project1 {
+	background-image: url("/preview1.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+#project2 {
+	background-image: url("/preview2.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+#project3 {
+	grid-area: three;
+}
+
+#project3 a {
+	color: black;
+}
+
+#contacts li {
+	width: 1.2rem;
+}
+
+#gmail,
+#linkedIn,
+#codePen {
+	max-width: 1.2rem;
+	fill: #fff;
+}
+
+.contact-list {
+	display: grid;
+	gap: 1.5rem;
+}
+
+svg > path:hover {
+	fill: #730fc3;
+}
+
+@media screen and (min-width: 700px) {
+	.intro {
+		height: 85vh;
+	}
+
+	header {
+		height: 15vh;
+	}
+
+	button {
+		display: none;
+	}
+
+	.menu {
+		position: static;
+		opacity: 1;
+		width: auto;
+		height: auto;
+		background-color: transparent;
+	}
+
+	.menu__list {
+		flex-direction: row;
+	}
+
+	.menu__item {
+		color: #fff;
+		padding: 0;
+	}
+
+	.fa-solid:hover {
+		color: #730fc3;
+	}
+
+	section {
+		height: 80vh;
+	}
+
+	.contact-list {
+		padding-top: 2rem;
+		gap: 2rem;
+	}
+}

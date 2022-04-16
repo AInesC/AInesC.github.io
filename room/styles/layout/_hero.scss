@@ -1,0 +1,37 @@
+.hero {
+	position: relative;
+	height: 45vh;
+	padding: 3rem 2rem;
+
+	&__title {
+		@include font(2.3rem, $black, 2.4rem, 600);
+		padding: 1rem 0;
+	}
+
+	&__description {
+		@include font(1rem, $darkGrey, 1.7rem, 500);
+	}
+
+	&__cta {
+		@include font(1rem, $black, 1.2rem, 600);
+		display: block;
+		padding-top: 4rem;
+		text-transform: uppercase;
+		letter-spacing: 0.8rem;
+
+		img {
+			scale: 1.1;
+			padding-left: 2rem;
+		}
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.hero {
+		height: auto;
+		display: grid;
+		align-items: center;
+		align-content: center;
+		padding: 5rem;
+	}
+}

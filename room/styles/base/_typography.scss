@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+
+html {
+	font-size: 12px;
+}
+
+body {
+	font-family: "Spartan", sans-serif;
+}
+
+@mixin font($size, $color, $lHeight, $weight) {
+	font-size: $size;
+	color: $color;
+	line-height: $lHeight;
+	font-weight: $weight;
+}

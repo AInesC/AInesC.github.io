@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+p,
+a,
+button,
+img,
+ul,
+li,
+footer,
+header,
+nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+button {
+	cursor: pointer;
+	outline: inherit;
+	background-color: transparent;
+}

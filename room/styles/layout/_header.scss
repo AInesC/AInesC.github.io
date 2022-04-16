@@ -1,0 +1,61 @@
+header {
+	display: grid;
+	align-items: center;
+	justify-content: space-between;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-areas:
+		"hamburger logo ."
+		". . ."
+		". . ."
+		". . .";
+	background-image: url("/images/mobile-image-hero-1.jpg");
+	background-size: cover;
+	background-position: 20%;
+	height: 40vh;
+}
+
+.brand {
+	grid-area: logo;
+	justify-self: center;
+}
+
+#hamburger {
+	grid-area: hamburger;
+}
+
+.imageSlider {
+	position: absolute;
+	right: 0;
+	top: calc(-27.6px - 2rem);
+}
+
+@media screen and (min-width: 800px) {
+	header {
+		padding-left: 4rem;
+		height: auto;
+		background-position: top center;
+		grid-template-areas:
+			"logo nav ."
+			". . ."
+			". . .";
+		grid-template-columns: auto auto 1fr 1fr;
+		gap: 3rem;
+		justify-content: start;
+	}
+
+	.brand {
+		justify-self: unset;
+	}
+
+	#hamburger {
+		display: none;
+	}
+
+	.imageSlider {
+		top: auto;
+		right: auto;
+		left: 0;
+		bottom: 0;
+	}
+}

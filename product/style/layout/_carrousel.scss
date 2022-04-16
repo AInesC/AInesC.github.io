@@ -1,0 +1,61 @@
+.carrousel {
+	position: relative;
+
+	&__previous {
+		position: absolute;
+		left: 10vw;
+		top: 50%;
+		width: 2rem;
+		height: 2rem;
+		background-color: $lightGreyBlue;
+		border-radius: 50%;
+		display: grid;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__img {
+		width: 100vw;
+	}
+
+	&__next {
+		position: absolute;
+		right: 10vw;
+		top: 50%;
+		width: 2rem;
+		height: 2rem;
+		background-color: $lightGreyBlue;
+		border-radius: 50%;
+		display: grid;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.next {
+	width: 0.5rem;
+}
+
+.prev {
+	width: 0.45rem;
+}
+
+@media screen and (min-width: 900px) {
+	.carrousel {
+		display: grid;
+
+		&__img {
+			max-width: 90%;
+			border-radius: 20px;
+			margin: 0 auto;
+		}
+
+		&__previous {
+			left: 3vw;
+		}
+
+		&__next {
+			right: 3vw;
+		}
+	}
+}

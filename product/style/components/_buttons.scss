@@ -1,0 +1,27 @@
+.btn {
+	@include font($weight: 700);
+	border: 3px solid $orange;
+	border-radius: 10px;
+	box-shadow: -1px 3px 1px 3px $softOrange;
+	padding: 0.8rem;
+
+	&--primary {
+		color: $white;
+		background-color: $orange;
+
+		width: 90vw;
+
+		&:hover {
+			color: $orange;
+			background-color: transparent;
+		}
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.btn {
+		&--primary {
+			width: 20vw;
+		}
+	}
+}

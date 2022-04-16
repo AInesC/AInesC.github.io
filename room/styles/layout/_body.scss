@@ -1,0 +1,29 @@
+.top-container {
+	display: grid;
+}
+
+@media screen and (min-width: 800px) {
+	.top-container {
+		grid-template-columns: 60% 40%;
+	}
+
+	.bottom-container {
+		display: grid;
+		grid-template-columns: auto auto auto;
+	}
+
+	.main-container {
+		display: grid;
+		grid-template-rows: 2fr 1fr;
+		width: 100vw;
+		height: 100vh;
+	}
+}
+
+footer {
+	text-align: center;
+
+	a {
+		color: $vDarkGrey;
+	}
+}

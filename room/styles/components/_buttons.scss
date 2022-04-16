@@ -1,0 +1,32 @@
+.imageSlider__controls {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	.right,
+	.left {
+		background-color: $black;
+		padding: 1rem 2rem 1rem;
+
+		img {
+			scale: 80%;
+		}
+
+		&:hover {
+			background-color: $vDarkGrey;
+		}
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.imageSlider__controls {
+		.right,
+		.left {
+			padding: 2rem 2.25rem 2rem;
+
+			img {
+				scale: 100%;
+			}
+		}
+	}
+}

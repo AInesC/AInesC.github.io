@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+p,
+a,
+button,
+img,
+ul,
+li,
+footer,
+header,
+nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+  outline: inherit;
+  background-color: transparent;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+}
+
+.imageSlider__controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.imageSlider__controls .right,
+.imageSlider__controls .left {
+  background-color: black;
+  padding: 1rem 2rem 1rem;
+}
+.imageSlider__controls .right img,
+.imageSlider__controls .left img {
+  scale: 80%;
+}
+.imageSlider__controls .right:hover,
+.imageSlider__controls .left:hover {
+  background-color: #454545;
+}
+
+@media screen and (min-width: 800px) {
+  .imageSlider__controls .right,
+.imageSlider__controls .left {
+    padding: 2rem 2.25rem 2rem;
+  }
+  .imageSlider__controls .right img,
+.imageSlider__controls .left img {
+    scale: 100%;
+  }
+}
+.top-container {
+  display: grid;
+}
+
+@media screen and (min-width: 800px) {
+  .top-container {
+    grid-template-columns: 60% 40%;
+  }
+
+  .bottom-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+footer {
+  text-align: center;
+}
+footer a {
+  color: #454545;
+}
+
+header {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "hamburger logo ." ". . ." ". . ." ". . .";
+  background-image: url("/images/mobile-image-hero-1.jpg");
+  background-size: cover;
+  background-position: 20%;
+  height: 40vh;
+}
+
+.brand {
+  grid-area: logo;
+  justify-self: center;
+}
+
+#hamburger {
+  grid-area: hamburger;
+}
+
+.imageSlider {
+  position: absolute;
+  right: 0;
+  top: calc(-27.6px - 2rem);
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    padding-left: 4rem;
+    height: auto;
+    background-position: top center;
+    grid-template-areas: "logo nav ." ". . ." ". . .";
+    grid-template-columns: auto auto 1fr 1fr;
+    gap: 3rem;
+    justify-content: start;
+  }
+
+  .brand {
+    justify-self: unset;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .imageSlider {
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 0;
+  }
+}
+.menu {
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  width: 100vw;
+  height: 12vh;
+  background-color: white;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.main-menu__list {
+  display: flex;
+  gap: 2.5rem;
+}
+.main-menu__item {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.2rem;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+.main-menu__item:hover {
+  color: #454545;
+}
+
+@media screen and (min-width: 800px) {
+  .menu {
+    grid-area: nav;
+    position: static;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    background-color: transparent;
+  }
+
+  .main-menu__item {
+    color: white;
+  }
+
+  #close {
+    display: none;
+  }
+}
+.hero {
+  position: relative;
+  height: 45vh;
+  padding: 3rem 2rem;
+}
+.hero__title {
+  font-size: 2.3rem;
+  color: black;
+  line-height: 2.4rem;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+.hero__description {
+  font-size: 1rem;
+  color: #a1a1a1;
+  line-height: 1.7rem;
+  font-weight: 500;
+}
+.hero__cta {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.2rem;
+  font-weight: 600;
+  display: block;
+  padding-top: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+}
+.hero__cta img {
+  scale: 1.1;
+  padding-left: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .hero {
+    height: auto;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    padding: 5rem;
+  }
+}
+.furniture {
+  padding: 3rem 2rem;
+}
+.furniture__title {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  letter-spacing: 0.3rem;
+}
+.furniture__description {
+  font-size: 1rem;
+  color: #a1a1a1;
+  line-height: 1.7rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 800px) {
+  .furniture {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    padding: 3rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+@media screen and (min-width: 900px) {
+	.images {
+		grid-area: images;
+	}
+
+	.product {
+		grid-area: product;
+	}
+
+	.main-container {
+		display: grid;
+		align-items: center;
+		margin: 0 auto;
+		padding: 2rem 0;
+		max-width: 80vw;
+		grid-template-areas: "images product";
+		grid-template-columns: 50% 50%;
+	}
+}

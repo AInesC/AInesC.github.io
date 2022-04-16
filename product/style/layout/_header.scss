@@ -1,0 +1,31 @@
+header {
+	padding: 2rem 0;
+	max-height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 90vw;
+}
+
+.container {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.user {
+	width: 1.5rem;
+}
+
+@media screen and (min-width: 900px) {
+	header {
+		max-width: 80vw;
+		padding: 3rem 0;
+	}
+
+	.container {
+		gap: 5rem;
+	}
+}
