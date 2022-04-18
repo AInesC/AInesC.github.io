@@ -1,3 +1,16 @@
+gsap.registerPlugin(TextPlugin);
+
+// NAME ANIMATION
+
+const myName = document.querySelector("#intro span");
+
+gsap.to(myName, {
+	delay: 0.5,
+	duration: 1.7,
+	text: "Alexandra Cruz",
+	ease: "none",
+});
+
 // HAMBURGER MENU ANIMATIONS
 
 const showMenu = document.getElementById("showMenu");
