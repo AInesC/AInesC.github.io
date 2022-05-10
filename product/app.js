@@ -92,8 +92,3 @@ more.addEventListener("click", () => {
 		alert("You cannot add more items to the cart");
 	}
 });
-
-// IMAGE ZOOM
-image.addEventListener("mousemove", () => {
-	image.style.transform = "scale(2)";
-});
