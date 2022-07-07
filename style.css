@@ -48,6 +48,7 @@ button {
 a {
 	text-decoration: none;
 	transition: all 0.3s ease-in 10ms;
+	color: #fff;
 }
 
 a::after {
@@ -231,7 +232,7 @@ section {
 }
 
 .projects-info {
-	display: grid;
+	display: none;
 	gap: 1.5rem;
 }
 
@@ -248,6 +249,11 @@ section {
 .projects-info__text {
 	display: grid;
 	gap: 1rem;
+}
+
+#gif {
+	justify-self: center;
+	width: max-content;
 }
 
 #contacts li {
@@ -311,6 +317,10 @@ svg > path:hover {
 	.contact-list {
 		padding-top: 2rem;
 		gap: 2rem;
+	}
+
+	.contact-list li {
+		width: 1.5rem;
 	}
 
 	.intro__title {
